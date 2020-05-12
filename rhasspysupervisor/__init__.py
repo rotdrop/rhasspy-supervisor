@@ -228,7 +228,7 @@ def profile_to_conf(
 def write_boilerplate(out_file: typing.TextIO):
     """Write boilerplate settings for supervisord service"""
     print("stopasgroup=true", file=out_file)
-    print("stdout_logfile=/dev/stdout", file=out_file)
+    print("stdout_logfile=STDOUT", file=out_file)
     print("stdout_logfile_maxbytes=0", file=out_file)
     print("redirect_stderr=true", file=out_file)
     print("", file=out_file)
